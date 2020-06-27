@@ -1,0 +1,17 @@
+Idé:
+    Skapa ett nfc/rfid baserat valuta system vilken man kan ladda för att kunna få limo ur maskinen på cornern
+
+    Vad behövs: 
+        En 'Admin portal'.
+        : Där ska man kunna registrera nya tags, samt ladda in valuta på tags
+    
+        En 'Säljningsläges portal' där man gör självaste köpet. Alternativet är att använda sig utav en raspberry pi + touchscreen. 
+
+         Server + db, förslag: grpc som communication mellan server och client + node + postgres db
+
+    
+
+        Noteringar: en av de kluriga delarna är hur kommunikationen till maskinen, hur 'lurar' man den och säger att den har fått valuta.
+
+        Full automatisk vs semi automatisk. Ska användaren få välja en summa och sedan måsta trycka på sin dricka för att få ut den
+        eller ska man kunna trycka en gång på touchscreenen och maskinen ger automatiskt?

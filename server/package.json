@@ -1,0 +1,17 @@
+{
+    "name": "node-grpc-server",
+    "dependencies": {
+        "@grpc/proto-loader": "^0.4.0",
+        "google-protobuf": "^3.12.2",
+        "grpc": "^1.24.3",
+        "knex": "^0.16.5",
+        "npm-run-script": "0.0.4",
+        "npm-scripts": "^1.4.0",
+        "pg": "^7.18.2",
+        "shelljs": "^0.8.4"
+    },
+    "scripts": {
+        "start": "node index.js",
+        "generateproto": "protoc -I=D:/Projects/beerdev/grpc_node/protos --java_out=D:/Projects/beerdev/grpc_node/generated D:/Projects/beerdev/grpc_node/protos/tags.proto"
+    }
+}
