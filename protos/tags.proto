@@ -6,6 +6,7 @@ package tags;
 service TagsService {
   rpc addTag(AddTagRequest) returns (Result) {}
   rpc listTags(Empty) returns (TagsList) {}
+  rpc listTagsTest(Empty) returns (TagsList) {}
 }
 
 // message type definitions
@@ -14,8 +15,6 @@ message Empty {}
 
 message AddTagRequest {
     string tagId = 1;
-    string pin = 2;
-    string name = 3;
 }
 
 message AddTagResponse {
@@ -28,8 +27,6 @@ message TagsList {
 
 message TagDetails {
   string tagId = 1;
-  string pin = 2;
-  string name = 3;  
 }
 
 message Result {
